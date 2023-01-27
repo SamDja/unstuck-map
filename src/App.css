@@ -1,0 +1,133 @@
+.App {
+  margin: 0 10%;
+  max-width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-container {
+  padding: 1em 0;
+  flex-grow: 8;
+  gap: 1em;
+  flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 640px;
+  width: 100%;
+}
+
+.button-container {
+  flex-grow: 2;
+  flex-basis: 20%;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  width: 100%;
+  max-width: 640px;
+}
+
+button {
+  width: 100%;
+  border: 0;
+  font-size: 1.5em;
+  font-weight: bold;
+  height: 2.8em;
+  cursor: pointer;
+  transition-duration: .2s;
+  border-radius: 1em;
+}
+
+button.yes-button {
+  background-color: #cdeac0;
+}
+
+button.no-button {
+  background-color: #fff;
+  border: 2px solid #fec3a6;
+}
+
+button.no-button:active, button.yes-button:active {
+  transform: matrix(0.95, 0, 0, 0.95, 0, 0)
+}
+
+.card {
+  width: 100%;
+  padding: 16px 48px;
+  min-height: 10em;
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+}
+
+.moment-of-struggle {
+  padding-left: 24px;
+  padding-right: 24px;
+  position: relative;
+}
+
+.moment-of-struggle>h1 {
+  z-index: 2;
+  transform: translate(0, -5%);
+}
+
+.moment-of-struggle>div.diamond {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  background-color: #FAD33A;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  z-index: 1;
+}
+
+.proposed-framework {
+  background-color: #03BDDD;
+  color: white;
+}
+
+.unstuck-achievement {
+  background-color: #F68483;
+  color: white;
+}
+
+.proposed-method {
+  border: 2px solid #559EA7;
+}
+
+.proposed-method>h1, .breakpoint>h1 {
+  color: #03BDDD;
+}
+
+.question {
+  border: 2px solid #B9C7C6;
+}
+
+.breakpoint {
+  border: 0.4em dotted #CCCCCC;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-style: italic;
+}
+
+footer {
+  padding-bottom: 8px;
+  text-align: center;
+}
