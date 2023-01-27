@@ -7,6 +7,13 @@ function App() {
 
   return (
     <div className="App">
+      <header>
+        <a href='./'>
+          <h1>
+            I feel stuck
+          </h1>
+        </a>
+      </header>
       <div className="cards-container">
         {unstuckMap[currentNode].cards.map((element, key) =>
           <div key={key} className={"card " + element.className}>
@@ -26,7 +33,7 @@ function App() {
         </div>
       }
       <footer>
-        <span>Created by <a href='https://twitter.com/sam__dja'>@samdja</a> based on Unstuck map by <a href='http://www.nikkel-blaase.com/'>Nikkel Blaase</a></span>    
+        <span>Created by <a href='https://twitter.com/sam__dja'>@samdja</a> based on Unstuck map by <a href='http://www.nikkel-blaase.com/'>Nikkel Blaase</a></span>
       </footer>
     </div>
   );
