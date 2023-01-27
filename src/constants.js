@@ -46,7 +46,7 @@ export const unstuckMap = {
     },
     "6": {
         cards: [
-            { title: "GO BACK TO OPPPORTUNITY", description: "When you try to market to everyone, you reach no one.", className: "breakpoint" }
+            { title: "GO BACK TO OPPORTUNITY", description: "When you try to market to everyone, you reach no one.", className: "breakpoint" }
         ],
         connections: [
             { className: "yes-button", node: "4", displayText: "Go" }
