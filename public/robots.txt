@@ -1,3 +1,10 @@
-# https://www.robotstxt.org/robotstxt.html
+# Content signals (see https://contentsignals.org). This file overrides the one
+# Cloudflare injects by default, so the signals are restated here.
+#
+#   search:   building a search index and providing search results.
+#   ai-input: feeding content into an AI model at answer time (RAG, grounding).
+#   ai-train: training or fine-tuning AI models.
+
 User-agent: *
-Disallow:
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
