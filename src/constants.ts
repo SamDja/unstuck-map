@@ -1,4 +1,8 @@
-export const unstuckMap = {
+export type UnstuckCard = { title: string; description: string; className: string };
+export type UnstuckConnection = { className: string; node: string; displayText: string };
+export type UnstuckNode = { cards: UnstuckCard[]; connections?: UnstuckConnection[] };
+
+export const unstuckMap: Record<string, UnstuckNode> = {
     "1": {
         cards: [
             { title: "Do you understand the users?", description: "", className: "moment-of-struggle" }
